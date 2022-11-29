@@ -2,7 +2,12 @@
 import random
 number = random.randint(-10000, 10000)
 
-rmdr = number % 10
+if number < 0:
+    num = -number
+    rmdr = -(num % 10)
+else:
+    num = number
+    rmdr = num % 10
 
 if rmdr > 5:
     footxt = "and is greater than 5"
