@@ -1,6 +1,7 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 import sys
 
+argv = sys.argv
 nargs = len(argv) - 1
 if nargs == 0:
     print("{} arguments.".format(nargs))
