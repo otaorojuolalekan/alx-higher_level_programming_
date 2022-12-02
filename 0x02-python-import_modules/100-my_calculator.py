@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     from sys import argv
+    from calculator_1 import add, sub, mul, div
 
 nargs = len(argv) - 1
 
@@ -26,3 +27,4 @@ elif op == '/':
     result = div(a, b)
 
 print("{} {} {} = {}".format(a, op, b, result))
+exit(0)
