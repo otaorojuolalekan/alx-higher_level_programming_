@@ -1,4 +1,2 @@
 #!/usr/bin/python3
-
-def printcool():
-    print("#pythoniscool")
+print("#pythoniscool")
