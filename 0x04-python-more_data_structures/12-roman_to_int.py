@@ -15,9 +15,10 @@ def value(r):
     if (r == 'M'):
         return 1000
     return -1
- 
+
+
 def roman_to_int(roman_string):
-    if not isinstance(roman_string,str):
+    if not isinstance(roman_string, str):
         return 0
 
     res = 0
