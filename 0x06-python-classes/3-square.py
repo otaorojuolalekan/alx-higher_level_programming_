@@ -15,6 +15,9 @@ You are not allowed to import any module
 
 
 class Square():
+    """class Square that defines a square by:
+    (based on 2-square.py)
+    """
     def __init__(self, size=0):
         self.__size = size
         if not isinstance(self.__size, int):
