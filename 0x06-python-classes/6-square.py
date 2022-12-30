@@ -10,7 +10,7 @@ class Square():
     Write a class Square that defines a square by:
     (based on 5-square.py)
     """
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         self.__position = position
 
@@ -33,8 +33,11 @@ class Square():
     @position.setter
     def position(self, value):
         for val in position:
-            if not(isinstance(val, int) and val >= 0):
-                raise TypeError("position must be a tuple of 2 positive integers")
+            if (len(position) != 2
+            or not(isinstance(val, int))
+            or val < 0):
+                raise TypeError("position must be a tuple \
+                of 2 positive integers")
         self.__position = value
 
     def area(self):
@@ -44,7 +47,7 @@ class Square():
         if self.__size == 0:
             print("")
             return
-        
+
         # [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
             [print(" ", end="") for i in range(0, self.__position[0])]
